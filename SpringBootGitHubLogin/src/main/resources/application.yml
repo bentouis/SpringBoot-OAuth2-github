@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    password:  
+    url: jdbc:mysql://localhost:3306/git?serverTimezone=UTC
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  security:
+    oauth2:
+      client:
+        registration:
+         github:
+          clientId: 4c4e2ff72bb0629xxx            
+          clientSecret: a6e3e2b87d5072d09a8145ca2d0b0ccdxxxxxx
+          scope:
+           - user:email
+           - read:user      

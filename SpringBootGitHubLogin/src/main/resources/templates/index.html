@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http:/www.thymeleaf.org">
+<head th:replace="fragments :: html_head(pageTitle='Product Manager - Home')" />
+<style>
+ 
+ 
+body {
+  background-image: url("https://nsquared.asia/img/Artboard%201.jpg");
+  background-repeat: no-repeat, repeat;
+  
+ 
+}
+</style>
+<body>
+<div class="container text-center">
+	<div><h1>Gestion de Produit</h1></div>
+	<div>
+		<br/>
+		<h4><a th:href="@{/list}">View all products</a></h4>
+		<br/>
+		<h4><a th:href="@{/new}">Create a New Product</a></h4>
+		<br/>
+	</div>
+</div>
+</body>
+</html>
